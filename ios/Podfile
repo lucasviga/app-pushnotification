@@ -31,3 +31,7 @@ target 'NotififyCDA-tvOS' do
     # Pods for testing
   end
 end
+
+target 'Notification App' do
+  pod 'OneSignal', '>= 2.9.3', '< 3.0'
+end
