@@ -5,7 +5,7 @@ import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 function App() {
   useEffect(() => {
-    OneSignal.init('0760b424-f6cd-4a7b-acc1-5ac06a997b9c');
+    OneSignal.init(`${process.env.ONESIGNAL_APPID}`);
     OneSignal.addEventListener('opened', onOpened);
   }, []);
 
